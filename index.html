@@ -3,20 +3,50 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>line</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body onselectstart="return false">
     <div class="content">
-        <div class="title">div与div连接——请随意拖动框中的两个box：</div>
-        <div class="dld">
-            <div id="a" class='box'>
+        <div class="title">1对1——请随意拖动框中的两个box：</div>
+        <div class="dld single">
+            <div id="a" class='box'></div>
+            <i class="line"></i>
+            <div id="b" class='box'></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="title">1对多</div>
+        <div class="dld one-to-many">
+            <div class="one-to-many-left">
+                <div class='circle send'></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <i class="line"></i>
+                <i class="line"></i>
+                <i class="line"></i>
+                <i class="line"></i>
                 <i class="line"></i>
             </div>
-            <div id="b" class='box'></div>
+            <div class="one-to-many-right">
+                <div class='circle send'></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <i class="line"></i>
+                <i class="line"></i>
+                <i class="line"></i>
+                <i class="line"></i>
+                <i class="line"></i>
+            </div>
         </div>
     </div>
     <script src="js/jquery-3.1.1.min.js"></script>

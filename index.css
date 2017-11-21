@@ -1,8 +1,10 @@
+/* 全局 */
 body {
   margin: 0;
   background-color: #fff;
 }
 
+/* 公用 */
 .content {
   margin: 20px;
 }
@@ -10,36 +12,44 @@ body {
 .title {
   position: relative;
   font-size: 16px;
-  line-height: 42px;
   margin-left: 15px;
   color: #dd5e89;
+  margin-bottom: 10px;
 }
 
 .title:after {
   content: '';
   position: absolute;
   left: -13px;
-  top: 49%;
+  top: 5px;
   width: 0;
   height: 0;
   border-left: 6px solid #dd5e89;
   border-top: 6px dashed transparent;
   border-bottom: 6px dashed transparent;
-  transform: translateY(-50%);
 }
 
 .dld {
   position: relative;
   height: 200px;
   border: 2px solid #cccccc;
+  overflow-y: scroll;
 }
 
+.line {
+  background-color: #555;
+  position: absolute;
+  width: 2px;
+  transform-origin: 50% 0;
+  z-index: 1;
+}
+
+/* 连线 */
 .box {
   position: absolute;
   width: 70px;
   height: 70px;
   background: #fff;
-  opacity: 0.5;
   border-radius: 8px;
   box-sizing: border-box;
 }
@@ -55,15 +65,87 @@ body {
   left: 70px;
   top: 70px;
   background-color: #fea942;
-  z-index: 1;
+  z-index: 5;
 }
 
-.line {
-  background-color: red;
+/* 1对多 */
+
+.circle {
+  background-color: #3f4566;
   position: absolute;
-  top: 50%;
-  left: 34px;
-  width: 2px;
-  transform-origin: 50% 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
   z-index: 10;
+}
+
+.one-to-many-left .circle:nth-child(2) {
+  left: 40%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.one-to-many-left .circle:nth-child(3) {
+  left: 13%;
+  top: 10%;
+}
+
+.one-to-many-left .circle:nth-child(4) {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.one-to-many-left .circle:nth-child(5) {
+  left: 13%;
+  bottom: 10%;
+}
+
+.one-to-many-left .circle:nth-child(6) {
+  left: 40%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.one-to-many-left .send {
+  background-color: #fea942;
+  left: 40%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.one-to-many-right .circle:nth-child(2) {
+  left: 60%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.one-to-many-right .circle:nth-child(3) {
+  right: 13%;
+  top: 10%;
+}
+
+.one-to-many-right .circle:nth-child(4) {
+  right: 0;
+  top: 50%;
+  transform: translateX(-50%);
+}
+
+.one-to-many-right .circle:nth-child(5) {
+  right: 13%;
+  bottom: 10%;
+}
+
+.one-to-many-right .circle:nth-child(6) {
+  left: 60%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.one-to-many-right .send {
+  background-color: #fea942;
+  left: 60%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
