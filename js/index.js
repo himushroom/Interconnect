@@ -2,7 +2,8 @@ $(function() {
   // 1对1
   var a = $('.single').find('#a'),
     b = $('.single').find('#b'),
-    line = $('.single').find('.line');
+    line = $('.single').find('.line'),
+    loader = $('.loader');
   // 初始化
   var center = getCenter(a);
   var data = getData(a, b);
@@ -21,6 +22,8 @@ $(function() {
     right = $('.one-to-many-right');
   getDom(left);
   getDom(right);
+
+  loader.css('display', 'none');
 });
 
 function init(send, line, circle) {
