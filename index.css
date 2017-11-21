@@ -81,7 +81,7 @@ body {
 }
 
 .one-to-many-left .circle:nth-child(2) {
-  left: 40%;
+  left: 45%;
   top: 10%;
   transform: translateX(-50%);
 }
@@ -103,20 +103,20 @@ body {
 }
 
 .one-to-many-left .circle:nth-child(6) {
-  left: 40%;
+  left: 45%;
   bottom: 10%;
   transform: translateX(-50%);
 }
 
 .one-to-many-left .send {
   background-color: #fea942;
-  left: 40%;
+  left: 45%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
 .one-to-many-right .circle:nth-child(2) {
-  left: 60%;
+  left: 55%;
   top: 10%;
   transform: translateX(-50%);
 }
@@ -138,14 +138,14 @@ body {
 }
 
 .one-to-many-right .circle:nth-child(6) {
-  left: 60%;
+  left: 55%;
   bottom: 10%;
   transform: translateX(-50%);
 }
 
 .one-to-many-right .send {
   background-color: #fea942;
-  left: 60%;
+  left: 55%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
