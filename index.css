@@ -31,7 +31,7 @@ body {
 
 .dld {
   position: relative;
-  height: 200px;
+  height: 240px;
   border: 2px solid #cccccc;
   overflow-y: scroll;
 }
@@ -82,29 +82,29 @@ body {
 
 .one-to-many-left .circle:nth-child(2) {
   left: 40%;
-  top: 0;
+  top: 10%;
   transform: translateX(-50%);
 }
 
 .one-to-many-left .circle:nth-child(3) {
-  left: 13%;
-  top: 10%;
+  left: 32%;
+  top: 20%;
 }
 
 .one-to-many-left .circle:nth-child(4) {
-  left: 0;
+  left: 28%;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .one-to-many-left .circle:nth-child(5) {
-  left: 13%;
-  bottom: 10%;
+  left: 32%;
+  bottom: 20%;
 }
 
 .one-to-many-left .circle:nth-child(6) {
   left: 40%;
-  bottom: 0;
+  bottom: 10%;
   transform: translateX(-50%);
 }
 
@@ -117,29 +117,29 @@ body {
 
 .one-to-many-right .circle:nth-child(2) {
   left: 60%;
-  top: 0;
+  top: 10%;
   transform: translateX(-50%);
 }
 
 .one-to-many-right .circle:nth-child(3) {
-  right: 13%;
-  top: 10%;
+  right: 32%;
+  top: 20%;
 }
 
 .one-to-many-right .circle:nth-child(4) {
-  right: 0;
+  right: 28%;
   top: 50%;
-  transform: translateX(-50%);
+  transform: translateY(-50%);
 }
 
 .one-to-many-right .circle:nth-child(5) {
-  right: 13%;
-  bottom: 10%;
+  right: 32%;
+  bottom: 20%;
 }
 
 .one-to-many-right .circle:nth-child(6) {
   left: 60%;
-  bottom: 0;
+  bottom: 10%;
   transform: translateX(-50%);
 }
 
